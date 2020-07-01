@@ -1,6 +1,8 @@
-[reject_all]
+# All IPs listed here will be blocked while the ss-server try to outbound.
+# Only IP is allowed, *NOT* domain name.
+#
 
-[white_list]
+[outbound_block_list]
 0.0.0.0/8
 10.0.0.0/8
 100.64.0.0/10
@@ -18,5 +20,6 @@
 240.0.0.0/4
 255.255.255.255/32
 ::1/128
+::ffff:127.0.0.1/104
 fc00::/7
 fe80::/10
